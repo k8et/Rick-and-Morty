@@ -29,7 +29,7 @@ const Characters = observer((props) => {
     }, [fetchCharacters]);
 
     const handleNameSearch = (event) => {
-        store.characterStore.speciesFilter = event.target.value;
+        store.characterStore.nameFilter = event.target.value;
     };
 
     const handleSpeciesChange = (event) => {
