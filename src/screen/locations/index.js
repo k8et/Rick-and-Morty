@@ -16,7 +16,7 @@ const Locations = observer((props) => {
   const { filteredLocation, fetchLocation } = store.locationStore;
   useEffect(() => {
     fetchLocation();
-  }, []);
+  }, [fetchLocation]);
   const handleTitleSearch = (event) => {
     store.locationStore.titleFilter = event.target.value;
   };

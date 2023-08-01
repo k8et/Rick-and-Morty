@@ -26,7 +26,7 @@ const Characters = observer((props) => {
     const { fetchCharacters, filteredCharacters} = store.characterStore;
     useEffect(() => {
         fetchCharacters()
-    }, []);
+    }, [fetchCharacters]);
 
     const handleNameSearch = (event) => {
         store.characterStore.speciesFilter = event.target.value;
